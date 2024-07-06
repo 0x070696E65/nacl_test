@@ -26,7 +26,6 @@ console.log(`signature: ${uint8arrayToHex(signature)}`)
 // 31D272F0662915CAC43AB7D721CAF65D8601F52B2E793EA1533E7BC20E04EA97B74859D9209A7B18DFECFD2C4A42D6957628F5357E3FB8B87CF6A888BAB4280E
 
 const { sha512 } = require('@noble/hashes/sha512')
-console.log('a')
 function crypto_hash_sha512(out, m, n, hasher) {
   const hashBuilder = hasher.create()
   hashBuilder.update(m.subarray(0, n))
